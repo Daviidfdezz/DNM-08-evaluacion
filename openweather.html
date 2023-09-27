@@ -52,15 +52,15 @@
                 lugar.innerHTML = tiempo.name;
                 temperatura.innerHTML = Math.round(tiempo.main.temp) + "ºC";
                 if(tiempo.coord.lat >= -27){
-                    document.body.style.background = url ("zonasurimg");
+                    document.body.style.background = "url('zonasurimg.jpg')";
                 } else if(tiempo.coord.lat < -27 && tiempo.coord.lat >= -33){
-                    document.body.style.background = url ("zonasurimg");                    
+                    document.body.style.background = "url('zonasurimg.jpg')";                    
                 } else if((tiempo.coord.lat < -33 && tiempo.coord.lat >= -37)){
-                    document.body.style.background = url ("zonasurimg");
+                    document.body.style.background = "url('zonasirimg.jpg')";
                 } else if((tiempo.coord.lat < -37 && tiempo.coord.lat >= -42)){
-                    document.body.style.background = url ("zonasurimg");
+                    document.body.style.background = "url('zonasurimg.jpg')";
                 } else {
-                    document.body.style.background = url ("zonasurimg");
+                    document.body.style.background = "url('zonasurimg.jpg')";
                 }                                       
             }
             function consulta() {
